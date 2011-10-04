@@ -1,0 +1,13 @@
+Index: cvs-1.11.23/diff/util.c
+===================================================================
+--- cvs-1.11.23.orig/diff/util.c
++++ cvs-1.11.23/diff/util.c
+@@ -231,7 +231,7 @@ begin_output ()
+ 	      close (pipes[0]);
+ 	    }
+ 
+-	  execl (PR_PROGRAM, PR_PROGRAM, "-f", "-h", name, 0);
++	  execl (PR_PROGRAM, PR_PROGRAM, "-f", "-h", name, NULL);
+ 	  pfatal_with_name (PR_PROGRAM);
+ 	}
+       else
