@@ -1,3 +1,6 @@
+* Tue Aug 14 2012 Pekka Vuorela <pvuorela@iki.fi> - 1.11.23
+- Fixes MER#39 : cvs has possible bashisms in it's RPM scriptlets
+
 * Mon Feb 14 2011 Jenny Lin <jenny.lin@intel.com> - 1.11.23
 - Add cvs-1.11.23-rcs.patch to fix CVE-2010-3846(#BMC 9877).
 

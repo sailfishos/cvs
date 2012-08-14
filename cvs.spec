@@ -102,14 +102,14 @@ fi
 rm -rf $RPM_BUILD_ROOT
 
 %post
-/sbin/install-info /%{_infodir}/cvs.info.gz /%{_infodir}/dir &> /dev/null
-/sbin/install-info /%{_infodir}/cvsclient.info.gz /%{_infodir}/dir &> /dev/null
+/sbin/install-info /%{_infodir}/cvs.info.gz /%{_infodir}/dir >/dev/null 2>&1
+/sbin/install-info /%{_infodir}/cvsclient.info.gz /%{_infodir}/dir >/dev/null 2>&1
 :
 
 %preun
 if [ $1 = 0 ]; then
-	/sbin/install-info --delete /%{_infodir}/cvs.info.gz /%{_infodir}/dir &> /dev/null
-	/sbin/install-info --delete /%{_infodir}/cvsclient.info.gz /%{_infodir}/dir &> /dev/null
+	/sbin/install-info --delete /%{_infodir}/cvs.info.gz /%{_infodir}/dir >/dev/null 2>&1
+	/sbin/install-info --delete /%{_infodir}/cvsclient.info.gz /%{_infodir}/dir >/dev/null 2>&1
 fi
 :
 
