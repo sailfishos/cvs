@@ -1,3 +1,5 @@
+%define cvssrcdir cvs-1.11.23
+
 Summary: A version control system
 Name: cvs
 Version: 1.11.23+git1
@@ -49,7 +51,7 @@ directories and files can then be combined together to form a software
 release.
 
 %prep
-%setup -q
+%setup -q -n %{cvssrcdir}
 %patch0 -p1 -b .cvspass
 %patch1 -p1 -b .extzlib
 %patch2 -p1 -b .netbsd-tag
