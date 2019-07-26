@@ -1,10 +1,10 @@
 Summary: A version control system
 Name: cvs
-Version: 1.11.23
-Release: 8
+Version: 1.11.23+git1
+Release: 1
 License: GPL+
 Group: Development/Tools
-Source0: ftp://ftp.gnu.org/non-gnu/cvs/source/stable/%{version}/cvs-%{version}.tar.bz2
+Source0: cvs-1.11.23.tar.bz2
 Source1: cvs.xinetd
 Source2: cvs.pam
 Source3: cvs.sh
